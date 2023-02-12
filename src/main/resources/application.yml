@@ -1,0 +1,21 @@
+# 포트
+server:
+  port: 8080
+
+# 오라클
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: ENC(9RMGX3YsYIYwjGldywpGv3h6366o3KGyTmgBJqU0S3wlBvJbZFYHF0SKfNAU5sezCDjgaBxxp4nSTjEQObAoa5ODsa0afSWLvKcJVLi0vMzLpkONhhTGd6wPwKUlnvgXEUFITDEXok+8o53IKE2k7g==)
+    username: ENC(zuoJ802bn4Kgil7G3axzSA==)
+    password: ENC(UQ3VKKrjaFsLg02mQnIw/OS7WVSjWFzX)
+
+# 마이바티스
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+# 암호화 설정
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
